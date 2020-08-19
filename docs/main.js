@@ -1,6 +1,6 @@
 var app = new Vue({
-    el: '#app',
-    data: {
-        message: '本文'
-    }
+  el: '#app',
+  data: {
+    message: '本文'
+  }
 })
