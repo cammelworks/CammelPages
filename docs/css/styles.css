@@ -60,6 +60,14 @@ header {
   border-width:5px;
 }
 
+.events-img {
+  height: 500px;
+  width: 500px;
+  margin: 100px 50px;
+  border: 2px solid;
+  border-color: #201005;
+}
+
 /* footer */
 footer {
   width: 100%;
