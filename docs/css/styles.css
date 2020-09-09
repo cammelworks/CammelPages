@@ -24,10 +24,11 @@ nav {
 }
 
 /* header */
-header {
+#header {
+  /* 前面に表示 */
+  z-index: 1;
   padding: 15px 0;
   margin: 0 auto;
-  text-align: center;
   position: fixed;
   height: 40px;
   width: 100%;
@@ -49,6 +50,23 @@ header {
 }
 
 /* body */
+
+/* topSplash */
+#topSplash{
+  position: relative;
+}
+#topSplash img{
+  width: 100%;
+}
+#topSplash p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  font-size: 60px;
+  color: #201005;
+}
 #content{
   padding-top: 70px;
 }
