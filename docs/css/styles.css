@@ -8,9 +8,15 @@ a {
 }
 
 body{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  background-image: url("../figs/mainSplashImg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* 背景画像を透過させる */
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
 }
 
 nav {
@@ -24,7 +30,7 @@ header {
   text-align: center;
   position: fixed;
   height: 40px;
-  width: 90%;
+  width: 100%;
   border: 2px solid;
   background-color: #201005;
 }
@@ -69,7 +75,7 @@ header {
 }
 
 #mailAddress {
-  margin: 15%;
+  margin: 10%;
   font-size: 50px;
   color: #201005;
 }
