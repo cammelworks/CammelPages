@@ -22,21 +22,14 @@ header {
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
-  display: flex;
-  align-items: flex-end;
   position: fixed;
-  height: 200px;
+  height: 40px;
   width: 90%;
   border: 2px solid;
   background-color: #201005;
 }
-header .headline{
-  margin: 0 150px;
-  font-size: 100px;
-}
 .nav-list {
   text-align: center;
-  padding: 10px 30px;
   margin: 0 auto;
   font-size: 30px;
 }
@@ -50,18 +43,14 @@ header .headline{
 }
 
 /* body */
-.empty{
-  padding-top: 10%;
-}
-
 #content{
-  padding-top: 250px;
+  padding-top: 70px;
 }
 
 .contents{
   margin: 100px auto;
-  margin-top:-250px;
-  padding-top:250px;
+  margin-top: -70px;
+  padding-top: 70px;
 }
 
 .subtitle{
