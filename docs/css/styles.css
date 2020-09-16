@@ -28,11 +28,13 @@ nav {
   /* 前面に表示 */
   z-index: 1;
   padding: 15px 0;
-  margin: 0 auto;
-  position: fixed;
+  margin: -7px auto;
+  /* position: fixed; */
   height: 40px;
   width: 100%;
-  border: 2px solid;
+  border: solid;
+  border-width: 2px 0 2px 0 ;
+  border-color: #a5a6b3;
   background-color: #201005;
 }
 .nav-list {
