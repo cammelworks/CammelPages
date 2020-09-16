@@ -11,7 +11,7 @@ body{
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-image: url("../figs/mainSplashImg.jpg");
+  background-image: url("../figs/splashs/mainSplashImg.jpg");
   background-size: cover;
   background-attachment: fixed;
   /* 背景画像を透過させる */
@@ -82,6 +82,18 @@ nav {
   padding: 0 50px;
   border-bottom:solid;
   border-width:5px;
+}
+
+.workd-img{
+  height: 400px;
+  width: 400px;
+  margin: 150px 50px;
+  border: 2px solid;
+  border-color: #201005;
+}
+
+#CodeTyper-img{
+  background-color: #010101;
 }
 
 .events-img {
