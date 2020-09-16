@@ -4,7 +4,7 @@
 
 a {	
   text-decoration: none;
-  color: white;
+  color: #FAFAFA;
 }
 
 body{
@@ -17,6 +17,16 @@ body{
   /* 背景画像を透過させる */
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
+}
+
+.oswald{
+  font-family: 'Oswald', sans-serif;
+  color: #202020;
+}
+
+.notoSans{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #202020;
 }
 
 nav {
@@ -33,7 +43,7 @@ nav {
   height: 40px;
   width: 100%;
   border: solid;
-  border-width: 2px 0 2px 0 ;
+  border-width: 1px 0 1px 0 ;
   border-color: #a5a6b3;
   background-color: #201005;
 }
@@ -66,8 +76,8 @@ nav {
   left: 50%;
   -webkit-transform : translate(-50%,-50%);
   transform : translate(-50%,-50%);
-  font-size: 60px;
-  color: #201005;
+  font-size: 100px;
+  -webkit-text-stroke: 1px #D68E10;
 }
 #content{
   padding-top: 70px;
@@ -87,8 +97,8 @@ nav {
 }
 
 .workd-img{
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: 150px 50px;
   border: 2px solid;
   border-color: #201005;
@@ -109,7 +119,6 @@ nav {
 #mailAddress {
   margin: 10%;
   font-size: 50px;
-  color: #201005;
 }
 
 /* footer */
@@ -122,5 +131,5 @@ footer {
   background-color: #201005;
 }
 .footer-text {
-  color: #fff;
+  color: #FAFAFA;
 }
