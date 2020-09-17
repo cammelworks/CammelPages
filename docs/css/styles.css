@@ -19,42 +19,23 @@ body{
   background-blend-mode:lighten;
 }
 
+/* フォントクラス */
 .oswald{
   font-family: 'Oswald', sans-serif;
   color: #202020;
 }
-
 .notoSans{
   font-family: 'Noto Sans JP', sans-serif;
   color: #202020;
 }
 
-nav {
-  margin: 0 0 0 auto;
-}
-
 /* header */
 #header {
-  /* 前面に表示 */
-  z-index: 1;
   padding: 15px 0;
   margin: -7px auto;
-  position: fixed;
   height: 40px;
   width: 100%;
-  border: solid;
-  border-width: 1px 0 1px 0 ;
-  border-color: #a5a6b3;
-  background-color: #201005;
-}
-#header-sticky {
-  /* 前面に表示 */
-  z-index: 1;
-  padding: 15px 0;
-  margin: -7px auto;
-  /* position: fixed; */
-  height: 40px;
-  width: 100%;
+  min-width: 800px;
   border: solid;
   border-width: 1px 0 1px 0 ;
   border-color: #a5a6b3;
@@ -83,6 +64,7 @@ nav {
 }
 #topSplash img{
   width: 100%;
+  min-width: 1000px;
 }
 #topSplash p{
   position: absolute;
