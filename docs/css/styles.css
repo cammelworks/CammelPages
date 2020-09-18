@@ -1,0 +1,131 @@
+* {
+  margin:0; padding:0;
+}
+
+a {	
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+body{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("../figs/splashs/mainSplashImg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /* 背景画像を透過させる */
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode:lighten;
+}
+
+/* フォントクラス */
+.oswald{
+  font-family: 'Oswald', sans-serif;
+  color: #202020;
+}
+.notoSans{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #202020;
+}
+
+/* header */
+#header {
+  padding: 15px 0;
+  margin: -7px auto;
+  height: 40px;
+  width: 100%;
+  min-width: 800px;
+  border: solid;
+  border-width: 1px 0 1px 0 ;
+  border-color: #a5a6b3;
+  background-color: #201005;
+}
+.nav-list {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-list-item a:hover{
+  background-color: #a5a6b3;
+}
+
+/* body */
+
+/* topSplash */
+#topSplash{
+  z-index: 2;
+  position: relative;
+}
+#topSplash img{
+  width: 100%;
+  min-width: 1000px;
+}
+#topSplash p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  font-size: 100px;
+  -webkit-text-stroke: 1px #D68E10;
+}
+#content{
+  padding-top: 70px;
+}
+
+.contents{
+  margin: 100px auto;
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
+.subtitle{
+  font-size: 70px;
+  padding: 0 50px;
+  border-bottom:solid;
+  border-width:5px;
+}
+
+.workd-img{
+  height: 300px;
+  width: 300px;
+  margin: 150px 50px;
+  border: 2px solid;
+  border-color: #201005;
+}
+
+#CodeTyper-img{
+  background-color: #010101;
+}
+
+.events-img {
+  height: 500px;
+  width: 500px;
+  margin: 100px 50px;
+  border: 2px solid;
+  border-color: #201005;
+}
+
+#mailAddress {
+  margin: 10%;
+  font-size: 50px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 30px; 
+  font-size: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #201005;
+}
+.footer-text {
+  color: #FAFAFA;
+}
