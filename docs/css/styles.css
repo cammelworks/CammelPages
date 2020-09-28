@@ -99,6 +99,26 @@ body{
   font-size: 30px;
 }
 
+/* members */
+.top-banner{
+	display: flex;
+  flex-wrap: wrap;
+  margin: 100px 20%;
+  text-align: center;
+  list-style: none; /*黒点を消す*/
+}
+.top-banner li {
+	width: calc(100%/4);
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.top-banner li img {
+  width: 100%;
+  min-width: 200px;
+	height: auto; /*画像の縦横比を維持*/
+	border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+}
+
 /* work */
 .workd-img{
   height: 300px;
