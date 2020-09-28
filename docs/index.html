@@ -53,7 +53,8 @@
       <span class="subtitle oswald">Members</span>
         <div v-if="upperRow" class="feature">
           <img v-bind:src="imgSrc">
-          <p class="notoSans">{{ info }}</p>
+          <p class="notoSans" id="name">{{ name }}</p>
+          <p class="notoSans" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="top-banner">
           <li v-on:click="clickedUpperImg" id="tyanio"><img src="figs/members/default.png"></li>
@@ -63,7 +64,8 @@
         </ul>
         <div v-if="lowerRow" class="feature">
           <img v-bind:src="imgSrc">
-          <p class="notoSans">{{ info }}</p>
+          <p class="notoSans" id="name">{{ name }}</p>
+          <p class="notoSans" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="top-banner">
           <li v-on:click="clickedLowerImg" id="daigo"><img src="figs/members/daigo.png"></li>

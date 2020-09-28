@@ -118,11 +118,23 @@ body{
 }
 .feature p {
   position: absolute;
+  width: 50%;
+  min-width: 300px;
   top: 0;
-  left: 60%;
+  left: 40%;
   bottom: 0;
-  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+}
+.feature #name{
+  font-size: 40px;
+  font-weight: bold;
+}
+.feature #memberInfo{
+  margin-top: 50px;
   font-size: 30px;
+  white-space: pre-wrap;
+  line-height: 1.2em;
 }
 
 .top-banner{
