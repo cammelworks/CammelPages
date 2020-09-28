@@ -92,6 +92,14 @@ body{
   border-width:5px;
 }
 
+/* about */
+#about-text{
+  margin: 150px auto;
+  height: 500px;
+  font-size: 30px;
+}
+
+/* work */
 .workd-img{
   height: 300px;
   width: 300px;
@@ -112,6 +120,7 @@ body{
   border-color: #201005;
 }
 
+/* contact */
 #mailAddress {
   margin: 10%;
   font-size: 50px;
