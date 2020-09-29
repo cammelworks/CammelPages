@@ -128,10 +128,12 @@ body{
   text-align: left;
 }
 .feature #name{
+  color: #FAFAFA;
   font-size: 40px;
   font-weight: bold;
 }
 .feature #memberInfo{
+  color: #FAFAFA;
   margin-top: 50px;
   font-size: 30px;
   white-space: pre-wrap;
