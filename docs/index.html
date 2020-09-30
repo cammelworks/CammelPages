@@ -41,10 +41,37 @@
   <div id="content">
     <div id="about" class="contents" name="about">
       <span class="subtitle oswald">About</span>
+      <div id="about-text">
+        <p class="notoSans">
+          Cammelは広島大学の学生7人のアジャイル開発チームです！<br>
+          プロダクトを1から開発し、今は案件を募集中です！
+        </p>
+      </div>
     </div>
   
     <div id="members" class="contents" name="members">
       <span class="subtitle oswald">Members</span>
+        <div v-if="upperRow" class="feature">
+          <img v-bind:src="imgSrc">
+          <p class="notoSans" id="name">{{ name }}</p>
+          <p class="notoSans" id="memberInfo">{{ info }}</p>
+        </div>
+        <ul class="top-banner">
+          <li v-on:click="clickedUpperImg" id="tyanio"><img src="figs/members/default.png"></li>
+          <li v-on:click="clickedUpperImg" id="kugi"><img src="figs/members/kugi.jpg"></li>
+          <li v-on:click="clickedUpperImg" id="yamakatsu"><img src="figs/members/yamakatsu.jpg"></li>
+          <li v-on:click="clickedUpperImg" id="inami"><img src="figs/members/default.png"></li>
+        </ul>
+        <div v-if="lowerRow" class="feature">
+          <img v-bind:src="imgSrc">
+          <p class="notoSans" id="name">{{ name }}</p>
+          <p class="notoSans" id="memberInfo">{{ info }}</p>
+        </div>
+        <ul class="top-banner">
+          <li v-on:click="clickedLowerImg" id="daigo"><img src="figs/members/daigo.png"></li>
+          <li v-on:click="clickedLowerImg" id="takeda"><img src="figs/members/default.png"></li>
+          <li v-on:click="clickedLowerImg" id="nishida"><img src="figs/members/nishida.jpg"></li>
+        </ul>
     </div>
   
     <div id="works" class="contents" name="works">
@@ -78,5 +105,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="src/main.js"></script>
+  <script src="src/members.js"></script>
 </body>
 </html>

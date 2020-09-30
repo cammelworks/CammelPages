@@ -40,6 +40,7 @@ body{
   border-width: 1px 0 1px 0 ;
   border-color: #a5a6b3;
   background-color: #201005;
+  z-index: 2;
 }
 .nav-list {
   text-align: center;
@@ -59,7 +60,7 @@ body{
 
 /* topSplash */
 #topSplash{
-  z-index: 2;
+  z-index: 1;
   position: relative;
 }
 #topSplash img{
@@ -92,6 +93,74 @@ body{
   border-width:5px;
 }
 
+/* about */
+#about-text{
+  margin: 150px auto;
+  height: 500px;
+  font-size: 30px;
+}
+
+/* members */
+.feature{
+  height: 300px;
+  background-color: rgba(15, 15, 15, 0.5);;
+  margin: 100px 0 -50px 0;
+  position: relative;
+}
+.feature img {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  bottom: 0;
+  margin: auto;
+}
+.feature p {
+  position: absolute;
+  width: 50%;
+  min-width: 300px;
+  top: 0;
+  left: 40%;
+  bottom: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+.feature #name{
+  font-size: 40px;
+  font-weight: bold;
+}
+.feature #memberInfo{
+  margin-top: 50px;
+  font-size: 30px;
+  white-space: pre-wrap;
+  line-height: 1.2em;
+}
+
+.top-banner{
+	display: flex;
+  flex-wrap: wrap;
+  margin: 100px 20%;
+  text-align: center;
+  list-style: none; /*黒点を消す*/
+}
+.top-banner li {
+	width: calc(100%/4);
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.top-banner li :hover{
+  cursor: pointer;
+}
+.top-banner li img {
+  width: 100%;
+  min-width: 200px;
+	height: auto; /*画像の縦横比を維持*/
+	border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+}
+
+/* work */
 .workd-img{
   height: 300px;
   width: 300px;
@@ -112,6 +181,7 @@ body{
   border-color: #201005;
 }
 
+/* contact */
 #mailAddress {
   margin: 10%;
   font-size: 50px;
