@@ -7,6 +7,16 @@ var members = new Vue({
     name: "",
     info: "",
   },
+  mounted:function(){
+    //画面内のクリック判定
+    window.addEventListener("click",function(e){
+      //メンバーの画像と詳細パネル以外なら詳細パネルを閉じる
+      if (!e.target.classList.contains("memberPanel")){
+        this.upperRow = false;
+        this.lowerRow = false;
+      }
+    }.bind(this))
+  },
   methods:{
     clickedUpperImg: function(e){
       switch (e.currentTarget.id){
@@ -44,7 +54,6 @@ M1
           this.info = "";
           break;
       }
-      console.log(e.currentTarget.id);
       this.name = e.currentTarget.id;
       this.upperRow = true;
       this.lowerRow = false;
