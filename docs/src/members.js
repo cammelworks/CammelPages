@@ -11,8 +11,13 @@ var members = new Vue({
     clickedUpperImg: function(e){
       switch (e.currentTarget.id){
         case "tyanio":
-          this.imgSrc = "figs/members/default.png";
-          this.info = "";
+          this.imgSrc = "figs/members/tyanio.jpg";
+          this.info = `
+M1
+しゃっちょさん
+POとして企画やユーザーに実際に意見をもらってきています
+開発もできる企画家になりたい！
+`;
           break
         case "kugi":
           this.imgSrc = "figs/members/kugi.jpg";
