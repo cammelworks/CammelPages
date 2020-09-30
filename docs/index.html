@@ -51,26 +51,26 @@
   
     <div id="members" class="contents" name="members">
       <span class="subtitle oswald">Members</span>
-        <div v-if="upperRow" class="feature detail">
-          <img v-bind:src="imgSrc" class="detail">
-          <p class="notoSans detail" id="name">{{ name }}</p>
-          <p class="notoSans detail" id="memberInfo">{{ info }}</p>
+        <div v-if="upperRow" class="feature memberPanel">
+          <img v-bind:src="imgSrc" class="memberPanel">
+          <p class="notoSans memberPanel" id="name">{{ name }}</p>
+          <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="top-banner">
-          <li><img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="tyanio"></li>
-          <li><img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi"></li>
-          <li><img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu"></li>
-          <li><img src="figs/members/default.png" v-on:click="clickedUpperImg" id="inami"></li>
+          <li><img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="tyanio" class="memberPanel"></li>
+          <li><img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi" class="memberPanel"></li>
+          <li><img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu" class="memberPanel"></li>
+          <li><img src="figs/members/default.png" v-on:click="clickedUpperImg" id="inami" class="memberPanel"></li>
         </ul>
-        <div v-if="lowerRow" class="feature detail">
-          <img v-bind:src="imgSrc" class="detail">
-          <p class="notoSans detail" id="name">{{ name }}</p>
-          <p class="notoSans detail" id="memberInfo">{{ info }}</p>
+        <div v-if="lowerRow" class="feature memberPanel">
+          <img v-bind:src="imgSrc" class="memberPanel">
+          <p class="notoSans memberPanel" id="name">{{ name }}</p>
+          <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="top-banner">
-          <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="daigo"></li>
-          <li><img src="figs/members/default.png" v-on:click="clickedLowerImg" id="takeda"></li>
-          <li><img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="nishida"></li>
+          <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="daigo" class="memberPanel"></li>
+          <li><img src="figs/members/default.png" v-on:click="clickedLowerImg" id="takeda" class="memberPanel"></li>
+          <li><img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="nishida" class="memberPanel"></li>
         </ul>
     </div>
   
