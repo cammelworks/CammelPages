@@ -51,10 +51,10 @@
   
     <div id="members" class="contents" name="members">
       <span class="subtitle oswald">Members</span>
-        <div v-if="upperRow" class="feature">
-          <img v-bind:src="imgSrc">
-          <p class="notoSans" id="name">{{ name }}</p>
-          <p class="notoSans" id="memberInfo">{{ info }}</p>
+        <div v-if="upperRow" class="feature detail">
+          <img v-bind:src="imgSrc" class="detail">
+          <p class="notoSans detail" id="name">{{ name }}</p>
+          <p class="notoSans detail" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="top-banner">
           <li><img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="tyanio"></li>
@@ -62,10 +62,10 @@
           <li><img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu"></li>
           <li><img src="figs/members/default.png" v-on:click="clickedUpperImg" id="inami"></li>
         </ul>
-        <div v-if="lowerRow" class="feature">
-          <img v-bind:src="imgSrc">
-          <p class="notoSans" id="name">{{ name }}</p>
-          <p class="notoSans" id="memberInfo">{{ info }}</p>
+        <div v-if="lowerRow" class="feature detail">
+          <img v-bind:src="imgSrc" class="detail">
+          <p class="notoSans detail" id="name">{{ name }}</p>
+          <p class="notoSans detail" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="top-banner">
           <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="daigo"></li>

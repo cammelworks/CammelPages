@@ -10,8 +10,8 @@ var members = new Vue({
   mounted:function(){
     //画面内のクリック判定
     window.addEventListener("click",function(e){
-      //イベントリスナーを持っていなければ詳細パネルを閉じる
-      if (!checkHasListener(e.target.id)){
+      //イベントリスナーを持っていなくて、詳細パネルの外側なら詳細パネルを閉じる
+      if (!checkHasListener(e.target.id) && !e.target.classList.contains("detail")){
         this.upperRow = false;
         this.lowerRow = false;
       }
