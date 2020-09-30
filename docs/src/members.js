@@ -10,8 +10,8 @@ var members = new Vue({
   mounted:function(){
     //画面内のクリック判定
     window.addEventListener("click",function(e){
-      console.log(e.target.id)
-      if (checkHasListener(e.target.id)){
+      //イベントリスナーを持っていなければ詳細パネルを閉じる
+      if (!checkHasListener(e.target.id)){
         this.upperRow = false;
         this.lowerRow = false;
       }
@@ -54,7 +54,6 @@ M1
           this.info = "";
           break;
       }
-      console.log(e.currentTarget.id);
       this.name = e.currentTarget.id;
       this.upperRow = true;
       this.lowerRow = false;
@@ -93,9 +92,10 @@ B4
   }
 })
 
+//イベントリスナーを持つコンポーネントであればtrueを返す
 function checkHasListener(target) {
   if(target != "tyanio" && target != "kugi" && target != "yamakatsu" && target != "inami" && target != "daigo" && target != "takeda" && target != "nishida"){
-    return true
+    return false;
   }
-  return false;
+  return true;
 };
