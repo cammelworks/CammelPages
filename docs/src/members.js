@@ -7,6 +7,16 @@ var members = new Vue({
     name: "",
     info: "",
   },
+  mounted:function(){
+    //画面内のクリック判定
+    window.addEventListener("click",function(e){
+      console.log(e.target.id)
+      if (checkHasListener(e.target.id)){
+        this.upperRow = false;
+        this.lowerRow = false;
+      }
+    }.bind(this))
+  },
   methods:{
     clickedUpperImg: function(e){
       switch (e.currentTarget.id){
@@ -82,3 +92,10 @@ B4
     }
   }
 })
+
+function checkHasListener(target) {
+  if(target != "tyanio" && target != "kugi" && target != "yamakatsu" && target != "inami" && target != "daigo" && target != "takeda" && target != "nishida"){
+    return true
+  }
+  return false;
+};
