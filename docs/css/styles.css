@@ -133,6 +133,7 @@ body{
   font-weight: bold;
 }
 .feature #memberInfo{
+  min-width: 600px;
   color: #FAFAFA;
   margin-top: 50px;
   font-size: 30px;
@@ -140,22 +141,23 @@ body{
   line-height: 1.2em;
 }
 
-.top-banner{
+.members-list{
 	display: flex;
   flex-wrap: wrap;
   margin: 100px 20%;
+  min-width: 900px;
   text-align: center;
   list-style: none; /*黒点を消す*/
 }
-.top-banner li {
+.members-list li {
 	width: calc(100%/4);
 	padding: 0 10px;
 	box-sizing: border-box;
 }
-.top-banner li :hover{
+.members-list li :hover{
   cursor: pointer;
 }
-.top-banner li img {
+.members-list li img {
   width: 100%;
   min-width: 200px;
 	height: auto; /*画像の縦横比を維持*/
@@ -163,7 +165,15 @@ body{
 }
 
 /* work */
-.workd-img{
+.feature #workInfo{
+  min-width: 600px;
+  color: #FAFAFA;
+  margin-top: 50px;
+  font-size: 30px;
+  white-space: pre-wrap;
+  line-height: 1.2em;
+}
+.works-img{
   height: 300px;
   width: 300px;
   margin: 150px 50px;
@@ -171,10 +181,33 @@ body{
   border-color: #201005;
 }
 
-#CodeTyper-img{
+#CodeTyper{
   background-color: #010101;
 }
 
+.works-list{
+	display: flex;
+  flex-wrap: wrap;
+  margin: 100px 20%;
+  min-width: 900px;
+  text-align: center;
+  list-style: none; /*黒点を消す*/
+}
+.works-list li {
+	width: calc(100%/3);
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.works-list li :hover{
+  cursor: pointer;
+}
+.works-list li img {
+  width: 100%;
+  min-width: 200px;
+	height: auto; /*画像の縦横比を維持*/
+	border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+}
+/* events */
 .events-img {
   height: 500px;
   width: 500px;

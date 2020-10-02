@@ -56,7 +56,7 @@
           <p class="notoSans memberPanel" id="name">{{ name }}</p>
           <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
         </div>
-        <ul class="top-banner">
+        <ul class="members-list">
           <li><img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="tyanio" class="memberPanel"></li>
           <li><img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi" class="memberPanel"></li>
           <li><img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu" class="memberPanel"></li>
@@ -67,7 +67,7 @@
           <p class="notoSans memberPanel" id="name">{{ name }}</p>
           <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
         </div>
-        <ul class="top-banner">
+        <ul class="members-list">
           <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="daigo" class="memberPanel"></li>
           <li><img src="figs/members/default.png" v-on:click="clickedLowerImg" id="takeda" class="memberPanel"></li>
           <li><img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="nishida" class="memberPanel"></li>
@@ -76,11 +76,30 @@
   
     <div id="works" class="contents" name="works">
       <span class="subtitle oswald">Works</span>
-      <div>
-        <a href="https://github.com/cammelworks/CodeTyper" target="_blank"><img src="figs/works/CodeTyperIcon.png" class="workd-img" id="CodeTyper-img"></a>
-        <a href="https://github.com/cammelworks/doubleEdged" target="_blank"><img src="figs/works/DoubleEdgedIcon.png" class="workd-img"></a>
-        <a href="https://github.com/cammelworks/The4thDay-of-MikkaBozu" target="_blank"><img src="figs/works/MikkaBozuIcon.png" class="workd-img"></a>
+      <!-- <div>
+        <a href="https://github.com/cammelworks/CodeTyper" target="_blank"><img src="figs/works/CodeTyperIcon.png" class="works-img" id="CodeTyper-img"></a>
+        <a href="https://github.com/cammelworks/doubleEdged" target="_blank"><img src="figs/works/DoubleEdgedIcon.png" class="works-img"></a>
+        <a href="https://github.com/cammelworks/The4thDay-of-MikkaBozu" target="_blank"><img src="figs/works/MikkaBozuIcon.png" class="works-img"></a>
+      </div> -->
+      <div v-if="upperRow" class="feature woksPanel">
+        <img v-bind:src="imgSrc" class="woksPanel">
+        <p class="notoSans memberPanel" id="name">{{ name }}</p>
+        <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
       </div>
+      <ul class="works-list">
+        <li><img src="figs/works/CodeTyperIcon.png" v-on:click="clickedUpperImg" id="CodeTyper" class="woksPanel"></li>
+        <li><img src="figs/works/DoubleEdgedIcon.png" v-on:click="clickedUpperImg" id="DoubleEdged" class="woksPanel"></li>
+        <li><img src="figs/works/MikkaBozuIcon.png" v-on:click="clickedUpperImg" id="MikkaBozu" class="woksPanel"></li>
+      </ul>
+      <!-- <div v-if="lowerRow" class="feature woksPanel">
+        <img v-bind:src="imgSrc" class="woksPanel">
+        <p class="notoSans memberPanel" id="name">{{ name }}</p>
+        <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
+      </div>
+      <ul class="works-list">
+        <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" class="woksPanel"></li>
+        <li><img src="figs/members/default.png" v-on:click="clickedLowerImg" class="woksPanel"></li>
+      </ul> -->
     </div>
   
     <div id="events" class="contents" name="events">
@@ -106,5 +125,6 @@
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="src/main.js"></script>
   <script src="src/members.js"></script>
+  <script src="src/works.js"></script>
 </body>
 </html>
