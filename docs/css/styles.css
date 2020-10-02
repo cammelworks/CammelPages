@@ -154,14 +154,17 @@ body{
 	padding: 0 10px;
 	box-sizing: border-box;
 }
-.members-list li :hover{
-  cursor: pointer;
-}
 .members-list li img {
   width: 100%;
   min-width: 200px;
 	height: auto; /*画像の縦横比を維持*/
-	border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+  border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+  cursor: pointer;
+}
+.members-list li p{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: -50px;
 }
 
 /* work */
@@ -198,15 +201,20 @@ body{
 	padding: 0 10px;
 	box-sizing: border-box;
 }
-.works-list li :hover{
-  cursor: pointer;
-}
 .works-list li img {
+  cursor: pointer;
   width: 100%;
   min-width: 200px;
 	height: auto; /*画像の縦横比を維持*/
 	border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
 }
+.works-list li p{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -50px;
+}
+
+
 /* events */
 .events-img {
   height: 500px;

@@ -57,10 +57,22 @@
           <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="members-list">
-          <li><img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="tyanio" class="memberPanel"></li>
-          <li><img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi" class="memberPanel"></li>
-          <li><img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu" class="memberPanel"></li>
-          <li><img src="figs/members/default.png" v-on:click="clickedUpperImg" id="inami" class="memberPanel"></li>
+          <li>
+            <img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="Tyanio" class="memberPanel">
+            <p class="notoSans">Tyanio</p>
+          </li>
+          <li>
+            <img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi" class="memberPanel">
+            <p class="notoSans">kugi</p>
+          </li>
+          <li>
+            <img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu" class="memberPanel">
+            <p class="notoSans">yamakatsu</p>
+          </li>
+          <li>
+            <img src="figs/members/default.png" v-on:click="clickedUpperImg" id="inami" class="memberPanel">
+            <p class="notoSans">inami</p>
+          </li>
         </ul>
         <div v-if="lowerRow" class="feature memberPanel">
           <img v-bind:src="imgSrc" class="memberPanel">
@@ -68,28 +80,41 @@
           <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
         </div>
         <ul class="members-list">
-          <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="daigo" class="memberPanel"></li>
-          <li><img src="figs/members/default.png" v-on:click="clickedLowerImg" id="takeda" class="memberPanel"></li>
-          <li><img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="nishida" class="memberPanel"></li>
+          <li>
+            <img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="Daigo" class="memberPanel">
+            <p class="notoSans">Daigo</p>
+          </li>
+          <li>
+            <img src="figs/members/default.png" v-on:click="clickedLowerImg" id="Takeda" class="memberPanel">
+            <p class="notoSans">Takeda</p>
+          </li>
+          <li>
+            <img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="Nishida" class="memberPanel">
+            <p class="notoSans">Nishida</p>
+          </li>
         </ul>
     </div>
   
     <div id="works" class="contents" name="works">
       <span class="subtitle oswald">Works</span>
-      <!-- <div>
-        <a href="https://github.com/cammelworks/CodeTyper" target="_blank"><img src="figs/works/CodeTyperIcon.png" class="works-img" id="CodeTyper-img"></a>
-        <a href="https://github.com/cammelworks/doubleEdged" target="_blank"><img src="figs/works/DoubleEdgedIcon.png" class="works-img"></a>
-        <a href="https://github.com/cammelworks/The4thDay-of-MikkaBozu" target="_blank"><img src="figs/works/MikkaBozuIcon.png" class="works-img"></a>
-      </div> -->
       <div v-if="upperRow" class="feature woksPanel">
         <img v-bind:src="imgSrc" class="woksPanel">
         <p class="notoSans memberPanel" id="name">{{ name }}</p>
         <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
       </div>
       <ul class="works-list">
-        <li><img src="figs/works/CodeTyperIcon.png" v-on:click="clickedUpperImg" id="CodeTyper" class="woksPanel"></li>
-        <li><img src="figs/works/DoubleEdgedIcon.png" v-on:click="clickedUpperImg" id="DoubleEdged" class="woksPanel"></li>
-        <li><img src="figs/works/MikkaBozuIcon.png" v-on:click="clickedUpperImg" id="MikkaBozu" class="woksPanel"></li>
+        <li>
+          <img src="figs/works/CodeTyperIcon.png" v-on:click="clickedUpperImg" id="CodeTyper" class="woksPanel">
+          <p class="notoSans">CodeTyper</p>
+        </li>
+        <li>
+          <img src="figs/works/DoubleEdgedIcon.png" v-on:click="clickedUpperImg" id="DoubleEdged" class="woksPanel">
+          <p class="notoSans">DoubleEdged</p>
+        </li>
+        <li>
+          <img src="figs/works/MikkaBozuIcon.png" v-on:click="clickedUpperImg" id="MikkaBozu" class="woksPanel">
+          <p class="notoSans">三日坊主の四日目</p>
+        </li>
       </ul>
       <!-- <div v-if="lowerRow" class="feature woksPanel">
         <img v-bind:src="imgSrc" class="woksPanel">

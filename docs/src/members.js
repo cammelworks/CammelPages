@@ -20,7 +20,7 @@ var members = new Vue({
   methods:{
     clickedUpperImg: function(e){
       switch (e.currentTarget.id){
-        case "tyanio":
+        case "Tyanio":
           this.imgSrc = "figs/members/tyanio.jpg";
           this.info = `
 M1
@@ -60,7 +60,7 @@ M1
     },
     clickedLowerImg: function(e){
       switch (e.currentTarget.id){
-        case "daigo":
+        case "Daigo":
           this.imgSrc = "figs/members/daigo.png";
           this.info = `
 M1
@@ -69,11 +69,11 @@ M1
 心霊など、オカルト、好きです
 `;
           break;
-        case "takeda":
+        case "Takeda":
           this.imgSrc = "figs/members/default.png";
           this.info = "";
           break;
-        case "nishida":
+        case "Nishida":
           this.imgSrc = "figs/members/nishida.jpg";
           this.info = `
 B4
