@@ -116,15 +116,21 @@
           <p class="notoSans">三日坊主の四日目</p>
         </li>
       </ul>
-      <!-- <div v-if="lowerRow" class="feature woksPanel">
+      <div v-if="lowerRow" class="feature woksPanel">
         <img v-bind:src="imgSrc" class="woksPanel">
         <p class="notoSans memberPanel" id="name">{{ name }}</p>
         <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
       </div>
       <ul class="works-list">
-        <li><img src="figs/members/daigo.png" v-on:click="clickedLowerImg" class="woksPanel"></li>
-        <li><img src="figs/members/default.png" v-on:click="clickedLowerImg" class="woksPanel"></li>
-      </ul> -->
+        <li>
+          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ARBeats" class="woksPanel">
+          <p class="notoSans">AR-Beats!</p>
+        </li>
+        <li>
+          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ByeByeVirus" class="woksPanel">
+          <p class="notoSans">ByeByeVirus</p>
+        </li>
+      </ul>
     </div>
   
     <div id="events" class="contents" name="events">

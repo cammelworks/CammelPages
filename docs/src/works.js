@@ -45,7 +45,7 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
 `;
           break;
         default:
-          this.imgSrc = "figs/members/default.png";
+          this.imgSrc = "figs/works/noimage.png";
           this.name = e.currentTarget.id;
           this.info = "";
           break;
@@ -55,32 +55,28 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
     },
     clickedLowerImg: function(e){
       switch (e.currentTarget.id){
-        case "daigo":
-          this.imgSrc = "figs/members/daigo.png";
+        case "ARBeats":
+          this.imgSrc = "figs/works/noimage.png";
+          this.name = "AR-Beats!";
           this.info = `
-M1
-夢は、UIデザイナー
-好きな食べ物はお刺身
-心霊など、オカルト、好きです
+現実のものをカメラで映してドラムに変えよう！
+ARで広々と楽器を演奏しましょう！
 `;
           break;
-        case "takeda":
-          this.imgSrc = "figs/members/default.png";
-          this.info = "";
-          break;
-        case "nishida":
-          this.imgSrc = "figs/members/nishida.jpg";
+        case "ByeByeVirus":
+          this.imgSrc = "figs/works/noimage.png";
+          this.name = e.currentTarget.id;
           this.info = `
-B4
-したっぱ社員
+外出自粛中に溜まったストレスをたったの15秒で発散できます！
+みんなとたくさんウイルスを消しましょう！
 `;
           break;
         default:
-          this.imgSrc = "figs/members/default.png"
+          this.imgSrc = "figs/works/noimage.png"
+          this.name = e.currentTarget.id;
           this.info = ""
           break
       }
-      this.name = e.currentTarget.id;
       this.upperRow = false;
       this.lowerRow = true;
     }
