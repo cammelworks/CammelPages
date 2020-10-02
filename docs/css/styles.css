@@ -111,6 +111,20 @@ body{
   background-color: rgba(15, 15, 15, 0.7);;
   margin: 100px 0 -50px 0;
   position: relative;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+  0% {
+    /* アニメーション開始時 */
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    /* アニメーション終了時 */
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .feature img {
   width: 15%;
