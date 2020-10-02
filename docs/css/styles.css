@@ -96,8 +96,9 @@ body{
 /* about */
 #about-text{
   margin: 150px auto;
+  min-width: 1000px;
   height: 500px;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /* members */
