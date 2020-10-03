@@ -24,7 +24,7 @@ var works = new Vue({
           this.imgSrc = "figs/works/CodeTyperIcon.png";
           this.name = e.currentTarget.id;
           this.info = `
-プログラミンで使うキーは、”＃”だったり”;”だったり普通のタイピングソフトでは習えない…
+プログラミングで使うキーは、”＃”だったり”;”だったり普通のタイピングゲームでは習えない…
 CodeTyperではそのようなキーも実際にプログラムを写経をしながら学べます！
 `;
           break
@@ -40,7 +40,7 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
           this.imgSrc = "figs/works/MikkaBozuIcon.png";
           this.name = "三日坊主の四日目";
           this.info = `
-一人ではダイエットが続かない…3日坊主のあなたへ
+一人ではダイエットが続かない…三日坊主のあなたへ
 チームで目標を共有して乗り越えてみませんか？
 `;
           break;
@@ -68,7 +68,7 @@ ARで広々と楽器を演奏しましょう！
           this.name = e.currentTarget.id;
           this.info = `
 外出自粛中に溜まったストレスをたったの15秒で発散できます！
-みんなとたくさんウイルスを消しましょう！
+みんなとたくさんウイルスを消そう！
 `;
           break;
         default:
