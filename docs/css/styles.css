@@ -7,6 +7,10 @@ a {
   color: #FAFAFA;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   width: 100%;
   margin: 0 auto;
@@ -40,6 +44,7 @@ body{
   border-width: 1px 0 1px 0 ;
   border-color: #a5a6b3;
   background-color: #201005;
+  z-index: 2;
 }
 .nav-list {
   text-align: center;
@@ -59,7 +64,7 @@ body{
 
 /* topSplash */
 #topSplash{
-  z-index: 2;
+  z-index: 1;
   position: relative;
 }
 #topSplash img{
@@ -92,7 +97,105 @@ body{
   border-width:5px;
 }
 
-.workd-img{
+/* about */
+#about-text{
+  margin: 150px auto;
+  min-width: 1000px;
+  height: 500px;
+  font-size: 35px;
+}
+
+/* members */
+.feature{
+  height: 300px;
+  background-color: rgba(15, 15, 15, 0.7);;
+  margin: 100px 0 -50px 0;
+  position: relative;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+  0% {
+    /* アニメーション開始時 */
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    /* アニメーション終了時 */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.feature img {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  bottom: 0;
+  margin: auto;
+}
+.feature p {
+  position: absolute;
+  width: 50%;
+  min-width: 300px;
+  top: 0;
+  left: 40%;
+  bottom: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+.feature #name{
+  color: #FAFAFA;
+  font-size: 40px;
+  font-weight: bold;
+}
+.feature #memberInfo{
+  min-width: 600px;
+  color: #FAFAFA;
+  margin-top: 50px;
+  font-size: 30px;
+  white-space: pre-wrap;
+  line-height: 1.2em;
+}
+
+.members-list, .works-list{
+	display: flex;
+  flex-wrap: wrap;
+  margin: 100px 20%;
+  min-width: 900px;
+  text-align: center;
+  list-style: none; /*黒点を消す*/
+}
+.members-list li {
+	width: calc(100%/4);
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.members-list li img, .works-list li img {
+  width: 100%;
+  min-width: 200px;
+	height: auto; /*画像の縦横比を維持*/
+  border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+  cursor: pointer;
+}
+.members-list li p{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: -50px;
+}
+
+/* work */
+.feature #workInfo{
+  min-width: 600px;
+  color: #FAFAFA;
+  margin-top: 50px;
+  font-size: 30px;
+  white-space: pre-wrap;
+  line-height: 1.2em;
+}
+.works-img{
   height: 300px;
   width: 300px;
   margin: 150px 50px;
@@ -100,10 +203,23 @@ body{
   border-color: #201005;
 }
 
-#CodeTyper-img{
+#CodeTyper{
   background-color: #010101;
 }
 
+.works-list li {
+	width: calc(100%/3);
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.works-list li p{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -50px;
+}
+
+
+/* events */
 .events-img {
   height: 500px;
   width: 500px;
@@ -112,6 +228,7 @@ body{
   border-color: #201005;
 }
 
+/* contact */
 #mailAddress {
   margin: 10%;
   font-size: 50px;

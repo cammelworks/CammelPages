@@ -41,19 +41,99 @@
   <div id="content">
     <div id="about" class="contents" name="about">
       <span class="subtitle oswald">About</span>
+      <div id="about-text">
+        <p class="notoSans">
+          Cammelは広島大学の学生7人のアジャイル開発チームです。<br>
+          チーム開発の能力を向上させつつ常に新しいことに<br>
+          目を向けながら挑戦をしていきたいと思っています！<br>
+          企画・実装・テスト・レビュー・フィードバックなど<br>
+          1からプロダクト開発を行っており、現在は案件も募集中です！
+        </p>
+      </div>
     </div>
   
     <div id="members" class="contents" name="members">
       <span class="subtitle oswald">Members</span>
+      <div v-show="upperRow" class="feature memberPanel">
+        <img v-bind:src="imgSrc" class="memberPanel">
+        <p class="notoSans memberPanel" id="name">{{ name }}</p>
+        <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
+      </div>
+      <ul class="members-list">
+        <li>
+          <img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="Tyanio" class="memberPanel">
+          <p class="notoSans">Tyanio</p>
+        </li>
+        <li>
+          <img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi" class="memberPanel">
+          <p class="notoSans">kugi</p>
+        </li>
+        <li>
+          <img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu" class="memberPanel">
+          <p class="notoSans">yamakatsu</p>
+        </li>
+        <li>
+          <img src="figs/members/default.png" v-on:click="clickedUpperImg" id="inami" class="memberPanel">
+          <p class="notoSans">inami</p>
+        </li>
+      </ul>
+      <div v-show="lowerRow" class="feature memberPanel">
+        <img v-bind:src="imgSrc" class="memberPanel">
+        <p class="notoSans memberPanel" id="name">{{ name }}</p>
+        <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
+      </div>
+      <ul class="members-list">
+        <li>
+          <img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="Daigo" class="memberPanel">
+          <p class="notoSans">Daigo</p>
+        </li>
+        <li>
+          <img src="figs/members/default.png" v-on:click="clickedLowerImg" id="Takeda" class="memberPanel">
+          <p class="notoSans">Takeda</p>
+        </li>
+        <li>
+          <img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="Nishida" class="memberPanel">
+          <p class="notoSans">Nishida</p>
+        </li>
+      </ul>
     </div>
   
     <div id="works" class="contents" name="works">
       <span class="subtitle oswald">Works</span>
-      <div>
-        <a href="https://github.com/cammelworks/CodeTyper" target="_blank"><img src="figs/works/CodeTyperIcon.png" class="workd-img" id="CodeTyper-img"></a>
-        <a href="https://github.com/cammelworks/doubleEdged" target="_blank"><img src="figs/works/DoubleEdgedIcon.png" class="workd-img"></a>
-        <a href="https://github.com/cammelworks/The4thDay-of-MikkaBozu" target="_blank"><img src="figs/works/MikkaBozuIcon.png" class="workd-img"></a>
+      <div v-show="upperRow" class="feature woksPanel">
+        <img v-bind:src="imgSrc" class="woksPanel">
+        <p class="notoSans memberPanel" id="name">{{ name }}</p>
+        <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
       </div>
+      <ul class="works-list">
+        <li>
+          <img src="figs/works/CodeTyperIcon.png" v-on:click="clickedUpperImg" id="CodeTyper" class="woksPanel">
+          <p class="notoSans">CodeTyper</p>
+        </li>
+        <li>
+          <img src="figs/works/DoubleEdgedIcon.png" v-on:click="clickedUpperImg" id="DoubleEdged" class="woksPanel">
+          <p class="notoSans">DoubleEdged</p>
+        </li>
+        <li>
+          <img src="figs/works/MikkaBozuIcon.png" v-on:click="clickedUpperImg" id="MikkaBozu" class="woksPanel">
+          <p class="notoSans">三日坊主の四日目</p>
+        </li>
+      </ul>
+      <div v-show="lowerRow" class="feature woksPanel">
+        <img v-bind:src="imgSrc" class="woksPanel">
+        <p class="notoSans memberPanel" id="name">{{ name }}</p>
+        <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
+      </div>
+      <ul class="works-list">
+        <li>
+          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ARBeats" class="woksPanel">
+          <p class="notoSans">AR-Beats!</p>
+        </li>
+        <li>
+          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ByeByeVirus" class="woksPanel">
+          <p class="notoSans">ByeByeVirus</p>
+        </li>
+      </ul>
     </div>
   
     <div id="events" class="contents" name="events">
@@ -78,5 +158,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="src/main.js"></script>
+  <script src="src/members.js"></script>
+  <script src="src/works.js"></script>
 </body>
 </html>

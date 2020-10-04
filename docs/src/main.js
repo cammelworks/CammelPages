@@ -1,3 +1,24 @@
+var topSplash = new Vue({
+  el: '#topSplash',
+  data:{
+    splashHeight: 0
+  },
+  mounted() {
+    //画面サイズが変わるたびに画像の縦サイズを取得
+    window.addEventListener('resize', this.calculateSplashSize);
+    this.calculateSplashSize()
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.calculateSplashSize);
+  },
+  methods: {
+    calculateSplashSize() {
+      //画像の縦サイズを取得
+      this.splashHeight = this.$refs.img.clientHeight
+    }
+  }
+})
+
 var header = new Vue({
   el: '#header',
   data: {
@@ -21,27 +42,6 @@ var header = new Vue({
       } else {
         this.$el.style.position = "relative";
       }
-    }
-  }
-})
-
-var topSplash = new Vue({
-  el: '#topSplash',
-  data:{
-    splashHeight: 0
-  },
-  mounted() {
-    //画面サイズが変わるたびに画像の縦サイズを取得
-    window.addEventListener('resize', this.calculateSplashSize);
-    this.calculateSplashSize()
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.calculateSplashSize);
-  },
-  methods: {
-    calculateSplashSize() {
-      //画像の縦サイズを取得
-      this.splashHeight = this.$refs.img.clientHeight
     }
   }
 })
