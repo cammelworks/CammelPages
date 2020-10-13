@@ -46,8 +46,13 @@ M1
 `;
           break;
         case "inami":
-          this.imgSrc = "figs/members/default.png";
-          this.info = "";
+          this.imgSrc = "figs/members/inami.jpg";
+          this.info = `
+M1
+見習い
+電気系
+電力について研究しています
+`;
           break;
         default:
           this.imgSrc = "figs/members/default.png";
@@ -70,8 +75,12 @@ M1
 `;
           break;
         case "Takeda":
-          this.imgSrc = "figs/members/default.png";
-          this.info = "";
+          this.imgSrc = "figs/members/takeda.jpg";
+          this.info = `
+M1
+プログラマー
+面白いプラットフォームを作りたい
+`;
           break;
         case "Nishida":
           this.imgSrc = "figs/members/nishida.jpg";
