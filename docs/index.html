@@ -134,6 +134,9 @@
           <div class="worksPanel media-body">
             <h1 class="worksPanel" id="name">{{ name }}</h1>
             <div class="worksPanel" id="workInfo">{{ info }}</div>
+            <a v-bind:href="appStoreUrl" target="_blank"><img v-if="mobileApp" src="figs/links/app-store.svg" class="work-links"></a>
+            <a v-bind:href="googlePlayUrl" target="_blank"><img v-if="mobileApp" src="figs/links/google-play.png" class="work-links"></a>
+            <a v-bind:href="webUrl" target="_blank"><img v-if="webApp" src="figs/links/launch.svg" class="work-links"></a>
           </div>
         </div>
       </div>
@@ -157,6 +160,9 @@
           <div class="worksPanel media-body">
             <h1 class="worksPanel" id="name">{{ name }}</h1>
             <div class="worksPanel" id="workInfo">{{ info }}</div>
+            <a v-bind:href="appStoreUrl" target="_blank"><img v-if="mobileApp" src="figs/links/app-store.svg" class="work-links"></a>
+            <a v-bind:href="googlePlayUrl" target="_blank"><img v-if="mobileApp" src="figs/links/google-play.png" class="work-links"></a>
+            <a v-bind:href="webUrl" target="_blank"><img v-if="webApp" src="figs/links/launch.svg" class="work-links"></a>
           </div>
         </div>
       </div>
