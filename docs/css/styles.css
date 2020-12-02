@@ -229,9 +229,17 @@ body{
 }
 
 /* contact */
-#mailAddress {
-  margin: 10%;
+#cotact-text {
+  margin: 30px;
   font-size: 50px;
+}
+
+#cotact-icon {
+  margin-right: 10px;
+  vertical-align: -10px;
+  border-radius: 27px;
+  border: solid;
+  background-color: black;
 }
 
 /* footer */
