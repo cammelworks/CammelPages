@@ -75,6 +75,8 @@
           <div class="memberPanel media-body">
             <h1 class="memberPanel" id="name">{{ name }}</h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
+            <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png"></a>
+            <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png"></a>
           </div>
         </div>
       </div>
@@ -104,6 +106,8 @@
           <div class="memberPanel media-body">
             <h1 class="memberPanel" id="name">{{ name }}</h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
+            <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png"></a>
+            <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png"></a>
           </div>
         </div>
       </div>
