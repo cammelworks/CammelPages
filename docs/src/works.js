@@ -11,7 +11,7 @@ var works = new Vue({
     //画面内のクリック判定
     window.addEventListener("click",function(e){
       //メンバーの画像と詳細パネル以外なら詳細パネルを閉じる
-      if (!e.target.classList.contains("woksPanel")){
+      if (!e.target.classList.contains("worksPanel")){
         this.upperRow = false;
         this.lowerRow = false;
       }
