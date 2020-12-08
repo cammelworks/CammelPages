@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <title>Cammel</title>
 </head>
-<body>
 
+<body>
   <div id="topSplash">
     <img src="figs/splashs/topSplashImg.jpg" ref="img">
     <p class="oswald">Cammel's Portfolio Site</p>
   </div>
-  
+
   <!-- header -->
   <div id="header">
     <nav class="head-nav">
@@ -37,123 +51,168 @@
     </nav>
   </div>
 
-
-  <div id="content">
-    <div id="about" class="contents" name="about">
-      <span class="subtitle oswald">About</span>
-      <div id="about-text">
-        <p class="notoSans">
+  <div class="container">
+    <div id="about" class="content-container" name="about">
+      <div class="content-title-container">
+        <span class="content-title">About</span>
+      </div>
+      <div>
+        <p>
           Cammelは広島大学の学生7人のアジャイル開発チームです。<br>
-          チーム開発の能力を向上させつつ常に新しいことに<br>
-          目を向けながら挑戦をしていきたいと思っています！<br>
-          企画・実装・テスト・レビュー・フィードバックなど<br>
-          1からプロダクト開発を行っており、現在は案件も募集中です！
+          チーム開発の能力を向上させつつ常に新しいことに目を向けながら挑戦をしていきたいと思っています！<br>
+          企画・実装・テスト・レビュー・フィードバックなど1からプロダクト開発を行っており、現在は案件も募集中です！
         </p>
       </div>
     </div>
-  
-    <div id="members" class="contents" name="members">
-      <span class="subtitle oswald">Members</span>
-      <div v-show="upperRow" class="feature memberPanel">
-        <img v-bind:src="imgSrc" class="memberPanel">
-        <p class="notoSans memberPanel" id="name">{{ name }}</p>
-        <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
+
+    <div id="members" class="content-container" name="members">
+      <div class="content-title-container">
+        <span class="content-title">Members</span>
       </div>
+      <div v-show="upperRow" class="feature memberPanel">
+        <div class="container media">
+          <img v-bind:src="imgSrc" class="memberPanel align-self-center">
+          <div class="memberPanel media-body">
+            <h1 class="memberPanel" id="name">{{ name }}</h1>
+            <div class="memberPanel" id="memberInfo">{{ info }}</div>
+          </div>
+        </div>
+      </div>
+
       <ul class="members-list">
         <li>
           <img src="figs/members/tyanio.jpg" v-on:click="clickedUpperImg" id="Tyanio" class="memberPanel">
-          <p class="notoSans">Tyanio</p>
+          <p>Tyanio</p>
         </li>
         <li>
           <img src="figs/members/kugi.jpg" v-on:click="clickedUpperImg" id="kugi" class="memberPanel">
-          <p class="notoSans">kugi</p>
+          <p>kugi</p>
         </li>
         <li>
           <img src="figs/members/yamakatsu.jpg" v-on:click="clickedUpperImg" id="yamakatsu" class="memberPanel">
-          <p class="notoSans">yamakatsu</p>
+          <p>yamakatsu</p>
         </li>
         <li>
           <img src="figs/members/inami.jpg" v-on:click="clickedUpperImg" id="inami" class="memberPanel">
-          <p class="notoSans">inami</p>
+          <p>inami</p>
         </li>
       </ul>
+
       <div v-show="lowerRow" class="feature memberPanel">
-        <img v-bind:src="imgSrc" class="memberPanel">
-        <p class="notoSans memberPanel" id="name">{{ name }}</p>
-        <p class="notoSans memberPanel" id="memberInfo">{{ info }}</p>
+        <div class="memberPanel container media">
+          <img v-bind:src="imgSrc" class="memberPanel align-self-center">
+          <div class="memberPanel media-body">
+            <h1 class="memberPanel" id="name">{{ name }}</h1>
+            <div class="memberPanel" id="memberInfo">{{ info }}</div>
+          </div>
+        </div>
       </div>
+
       <ul class="members-list">
         <li>
           <img src="figs/members/daigo.png" v-on:click="clickedLowerImg" id="Daigo" class="memberPanel">
-          <p class="notoSans">Daigo</p>
+          <p>Daigo</p>
         </li>
         <li>
           <img src="figs/members/takeda.jpg" v-on:click="clickedLowerImg" id="Takeda" class="memberPanel">
-          <p class="notoSans">Takeda</p>
+          <p>Takeda</p>
         </li>
         <li>
           <img src="figs/members/nishida.jpg" v-on:click="clickedLowerImg" id="Nishida" class="memberPanel">
-          <p class="notoSans">Nishida</p>
+          <p>Nishida</p>
         </li>
       </ul>
     </div>
-  
-    <div id="works" class="contents" name="works">
-      <span class="subtitle oswald">Works</span>
-      <div v-show="upperRow" class="feature woksPanel">
-        <img v-bind:src="imgSrc" class="woksPanel">
-        <p class="notoSans memberPanel" id="name">{{ name }}</p>
-        <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
+
+    <div id="works" class="content-container" name="works">
+      <div class="content-title-container">
+        <span class="content-title">Works<span>
+      </div>
+      <div v-show="upperRow" class="feature worksPanel">
+        <div class="container media">
+          <img v-bind:src="imgSrc" class="worksPanel align-self-center">
+          <div class="worksPanel media-body">
+            <h1 class="worksPanel" id="name">{{ name }}</h1>
+            <div class="worksPanel" id="workInfo">{{ info }}</div>
+          </div>
+        </div>
       </div>
       <ul class="works-list">
         <li>
-          <img src="figs/works/CodeTyperIcon.png" v-on:click="clickedUpperImg" id="CodeTyper" class="woksPanel">
-          <p class="notoSans">CodeTyper</p>
+          <img src="figs/works/CodeTyperIcon.png" v-on:click="clickedUpperImg" id="CodeTyper" class="worksPanel">
+          <p>CodeTyper</p>
         </li>
         <li>
-          <img src="figs/works/DoubleEdgedIcon.png" v-on:click="clickedUpperImg" id="DoubleEdged" class="woksPanel">
-          <p class="notoSans">DoubleEdged</p>
+          <img src="figs/works/DoubleEdgedIcon.png" v-on:click="clickedUpperImg" id="DoubleEdged" class="worksPanel">
+          <p>DoubleEdged</p>
         </li>
         <li>
-          <img src="figs/works/MikkaBozuIcon.png" v-on:click="clickedUpperImg" id="MikkaBozu" class="woksPanel">
-          <p class="notoSans">三日坊主の四日目</p>
+          <img src="figs/works/MikkaBozuIcon.png" v-on:click="clickedUpperImg" id="MikkaBozu" class="worksPanel">
+          <p>三日坊主の四日目</p>
         </li>
       </ul>
-      <div v-show="lowerRow" class="feature woksPanel">
-        <img v-bind:src="imgSrc" class="woksPanel">
-        <p class="notoSans memberPanel" id="name">{{ name }}</p>
-        <p class="notoSans memberPanel" id="workInfo">{{ info }}</p>
+      <div v-show="lowerRow" class="feature worksPanel">
+        <div class="container media">
+          <img v-bind:src="imgSrc" class="worksPanel align-self-center">
+          <div class="worksPanel media-body">
+            <h1 class="worksPanel" id="name">{{ name }}</h1>
+            <div class="worksPanel" id="workInfo">{{ info }}</div>
+          </div>
+        </div>
       </div>
       <ul class="works-list">
         <li>
-          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ARBeats" class="woksPanel">
-          <p class="notoSans">AR-Beats!</p>
+          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ARBeats" class="worksPanel">
+          <p>AR-Beats!</p>
         </li>
         <li>
-          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ByeByeVirus" class="woksPanel">
-          <p class="notoSans">ByeByeVirus</p>
+          <img src="figs/works/noimage.png" v-on:click="clickedLowerImg" id="ByeByeVirus" class="worksPanel">
+          <p>ByeByeVirus</p>
         </li>
       </ul>
     </div>
-  
-    <div id="events" class="contents" name="events">
-      <span class="subtitle oswald">Events</span>
-      <div>
-        <a href="https://cammel.connpass.com/" target="_blank"><img src="figs/events/momijiLT.png" class="events-img"></a>
-        <a href="https://connpass.com/event/185478/" target="_blank"><img src="figs/events/HUhackLogo.png" class="events-img"></a>
+
+    <div id="events" class="content-container" name="events">
+      <div class="content-title-container">
+        <span class="content-title">Events<span>
       </div>
+      <ul class="events-list">
+        <li>
+          <a href="https://cammel.connpass.com/" target="_blank">
+            <img src="figs/events/momijiLT.png" class="events-img">
+          </a>
+        </li>
+        <li>
+          <a href="https://connpass.com/event/185478/" target="_blank">
+            <img src="figs/events/HUhackLogo.png" class="events-img">
+          </a>
+        </li>
+      </ul>
     </div>
-  
-    <div id="contact" class="contents" name="contact">
-      <span class="subtitle oswald">Contact</span>
-      <p class="notoSans" id="mailAddress">cammelScale@gmail.com</p>
+
+    <div id="contact" class="content-container" name="contact">
+      <div class="content-title-container">
+        <span class="content-title">Contact<span>
+      </div>
+      <p id="cotact-text">
+        <img src="figs/contact/email.png" id="cotact-icon" v-on:click="clickedLowerImg">cammelScale@gmail.com
+      </p>
+      <p id="cotact-text">
+        <a href="https://twitter.com/Cammel2019" target="_blank">
+          <img src="figs/contact/twitter.png" id="cotact-icon" v-on:click="clickedLowerImg">@Cammel2019
+        </a>
+      </p>
+      <p id="cotact-text">
+        <a href="https://github.com/cammelworks" target="_blank">
+          <img src="figs/contact/gitHub.png" id="cotact-icon" v-on:click="clickedLowerImg">cammelworks
+        </a>
+      </p>
     </div>
   </div>
-  
 
   <!-- footer -->
   <footer>
-  	<p class="footer-text oswald">© 2020 Cammel</p>
+    <div class="footer-text oswald">© 2020 Cammel</div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -161,4 +220,5 @@
   <script src="src/members.js"></script>
   <script src="src/works.js"></script>
 </body>
+
 </html>
