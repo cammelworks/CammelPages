@@ -75,6 +75,10 @@
           <div class="memberPanel media-body">
             <h1 class="memberPanel" id="name">{{ name }}</h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
+            <div class="sns-icon-container">
+              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="contact-icon"></a>
+              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="contact-icon"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -104,6 +108,10 @@
           <div class="memberPanel media-body">
             <h1 class="memberPanel" id="name">{{ name }}</h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
+            <div class="sns-icon-container">
+              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="contact-icon"></a>
+              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="contact-icon"></a>
+            </div>
           </div>
         </div>
       </div>
@@ -210,17 +218,17 @@
       <div class="content-title-container">
         <span class="content-title">Contact<span>
       </div>
-      <p id="cotact-text">
-        <img src="figs/contact/email.png" id="cotact-icon" v-on:click="clickedLowerImg">cammelScale@gmail.com
+      <p id="contact-text">
+        <img src="figs/contact/email.png" class="contact-icon" v-on:click="clickedLowerImg">cammelScale@gmail.com
       </p>
-      <p id="cotact-text">
+      <p id="contact-text">
         <a href="https://twitter.com/Cammel2019" target="_blank">
-          <img src="figs/contact/twitter.png" id="cotact-icon" v-on:click="clickedLowerImg">@Cammel2019
+          <img src="figs/contact/twitter.png" class="contact-icon" v-on:click="clickedLowerImg">@Cammel2019
         </a>
       </p>
-      <p id="cotact-text">
+      <p id="contact-text">
         <a href="https://github.com/cammelworks" target="_blank">
-          <img src="figs/contact/gitHub.png" id="cotact-icon" v-on:click="clickedLowerImg">cammelworks
+          <img src="figs/contact/gitHub.png" class="contact-icon" v-on:click="clickedLowerImg">cammelworks
         </a>
       </p>
     </div>
