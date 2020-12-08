@@ -179,6 +179,13 @@ body{
 #CodeTyper{
   background-color: #010101;
 }
+.works-link-container{
+  margin-top: 16px;
+}
+.works-link-icon{
+  height: 64px;
+  margin-right: 16px;
+}
 .works-list li {
 	width: calc(100%/3);
 	padding: 10px;
