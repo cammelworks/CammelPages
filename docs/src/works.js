@@ -101,6 +101,19 @@ this.webUrl = "https://byebyevirus-bfa26.firebaseapp.com/"
 this.mobileApp = false;
 this.webApp = true;
           break;
+        case "NameIt":
+            this.imgSrc = "figs/works/name_it-icon.png";
+            this.name = "name_it";
+            this.info = `
+            開発中になんとなく変数名やメソッド名を決めてもモヤモヤするときありませんか？
+            そんな時はこの"name_it"でみんなに聞いてみましょう！ このサイトでは自分が悩んでいる変数名やメソッド名を投稿し、 みんながアンケートに投票や更なる選択肢の追加などを行って よりよいネーミングを共有していくエンジニア支援サイトです。
+  `
+  this.appStoreUrl = ""
+  this.googlePlayUrl = ""
+  this.webUrl = "https://name-it-38fb8.web.app/#/"
+  this.mobileApp = false;
+  this.webApp = true;
+          break;
         default:
           this.imgSrc = "figs/works/noimage.png"
           this.name = e.currentTarget.id;
