@@ -1,26 +1,19 @@
-* {
-  margin:0; padding:0;
-}
-
-a {	
-  text-decoration: none;
-  color: #FAFAFA;
-}
-
 html{
   scroll-behavior: smooth;
 }
 
 body{
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
   background-image: url("../figs/splashs/mainSplashImg.jpg");
   background-size: cover;
   background-attachment: fixed;
+
   /* 背景画像を透過させる */
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
+
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 28px;
+  color: #202020;
 }
 
 /* フォントクラス */
@@ -28,18 +21,12 @@ body{
   font-family: 'Oswald', sans-serif;
   color: #202020;
 }
-.notoSans{
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #202020;
-}
 
 /* header */
 #header {
   padding: 15px 0;
   margin: -7px auto;
-  height: 40px;
   width: 100%;
-  min-width: 800px;
   border: solid;
   border-width: 1px 0 1px 0 ;
   border-color: #a5a6b3;
@@ -56,11 +43,38 @@ body{
   display: inline-block;
   margin: 0 20px;
 }
+.nav-list-item a{
+  color: #FAFAFA;
+}
 .nav-list-item a:hover{
   background-color: #a5a6b3;
 }
 
 /* body */
+.content-container{
+  margin-top: 50px;
+}
+
+.content-container > *{
+  margin-bottom: 50px;
+}
+
+.content-container:last-child{
+  margin-bottom: 0px;
+}
+
+.content-title-container{
+  text-align: center;
+}
+
+.content-title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  margin: 0 auto;
+  padding: 0 50px;
+  border-bottom:solid;
+  border-width:5px;
+}
 
 /* topSplash */
 #topSplash{
@@ -69,7 +83,6 @@ body{
 }
 #topSplash img{
   width: 100%;
-  min-width: 1000px;
 }
 #topSplash p{
   position: absolute;
@@ -79,9 +92,6 @@ body{
   transform : translate(-50%,-50%);
   font-size: 100px;
   -webkit-text-stroke: 1px #D68E10;
-}
-#content{
-  padding-top: 70px;
 }
 
 .contents{
@@ -98,19 +108,24 @@ body{
 }
 
 /* about */
-#about-text{
-  margin: 150px auto;
-  min-width: 1000px;
-  height: 500px;
-  font-size: 35px;
-}
 
 /* members */
 .feature{
-  height: 300px;
-  background-color: rgba(15, 15, 15, 0.7);;
-  margin: 100px 0 -50px 0;
+  height: 400px;
+  background-color: rgba(15, 15, 15, 0.7);
+
+  /* 子要素を上下中央揃えで表示 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* containerから逸脱して全幅表示する */
+  width: 100vw;
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* アニメーション */
   animation-name: fadeIn;
   animation-duration: 1s;
 }
@@ -118,129 +133,113 @@ body{
   0% {
     /* アニメーション開始時 */
     opacity: 0;
-    transform: translateY(-80px);
+    transform: translateX(-1080px);
   }
   100% {
     /* アニメーション終了時 */
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(-50%);
   }
 }
-.feature img {
-  width: 15%;
-  min-width: 200px;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 20%;
-  bottom: 0;
-  margin: auto;
+.media > img{
+  width: auto;
+  height: 128px;
+  margin-right: 1rem;
 }
-.feature p {
-  position: absolute;
-  width: 50%;
-  min-width: 300px;
-  top: 0;
-  left: 40%;
-  bottom: 0;
-  margin-top: 20px;
-  text-align: left;
-}
-.feature #name{
+.media-body{
   color: #FAFAFA;
-  font-size: 40px;
-  font-weight: bold;
 }
-.feature #memberInfo{
-  min-width: 600px;
+.sns-icon{
   color: #FAFAFA;
-  margin-top: 50px;
-  font-size: 30px;
-  white-space: pre-wrap;
-  line-height: 1.2em;
+  width: 48px;
+  margin-left: 8px;
 }
-
-.members-list, .works-list{
+.members-list, .works-list, .events-list{
 	display: flex;
   flex-wrap: wrap;
-  margin: 100px 20%;
-  min-width: 900px;
   text-align: center;
   list-style: none; /*黒点を消す*/
 }
 .members-list li {
 	width: calc(100%/4);
-	padding: 0 10px;
+	padding: 10px;
 	box-sizing: border-box;
 }
 .members-list li img, .works-list li img {
   width: 100%;
-  min-width: 200px;
-	height: auto; /*画像の縦横比を維持*/
-  border:solid 1px #ccc; /*画像を1pxのグレーの枠線で囲む指定の場合 */
+	height: auto; /* 画像の縦横比を維持 */
   cursor: pointer;
 }
 .members-list li p{
-  font-size: 40px;
   font-weight: bold;
   margin-bottom: -50px;
+  
+  /* yamakatsuがどうしても小さくしてた時はみ出てしまうので...でそのときは表示する */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* work */
-.feature #workInfo{
-  min-width: 600px;
-  color: #FAFAFA;
-  margin-top: 50px;
-  font-size: 30px;
-  white-space: pre-wrap;
-  line-height: 1.2em;
-}
-.works-img{
-  height: 300px;
-  width: 300px;
-  margin: 150px 50px;
-  border: 2px solid;
-  border-color: #201005;
-}
-
 #CodeTyper{
   background-color: #010101;
 }
-
+.works-link-container{
+  margin-top: 16px;
+}
+.works-link-icon{
+  height: 64px;
+  margin-right: 16px;
+}
 .works-list li {
 	width: calc(100%/3);
-	padding: 0 10px;
+	padding: 10px;
 	box-sizing: border-box;
 }
 .works-list li p{
-  font-size: 30px;
   font-weight: bold;
   margin-bottom: -50px;
+
+  /* 三日坊主の四日目が小さくしたときはみ出てしまうので...でそのときは表示する */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
 /* events */
+.events-list li {
+	width: calc(100%/2);
+	padding: 10px;
+	box-sizing: border-box;
+}
 .events-img {
-  height: 500px;
-  width: 500px;
-  margin: 100px 50px;
-  border: 2px solid;
-  border-color: #201005;
+  width: 100%;
 }
 
 /* contact */
-#mailAddress {
-  margin: 10%;
-  font-size: 50px;
+#contact-text {
+  margin: 16px 0;
+}
+.contact-icon {
+  width: 64px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 32px;
+  border: solid;
+  background-color: #201005;
+}
+#contact a{
+  color: #201005;
 }
 
 /* footer */
 footer {
   width: 100%;
-  height: 30px; 
   font-size: 50px;
   text-align: center;
-  padding: 50px 0;
+  padding: 18px 0;
+  margin-top: 50px;
   background-color: #201005;
 }
 .footer-text {

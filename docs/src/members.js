@@ -6,6 +6,8 @@ var members = new Vue({
     imgSrc: "",
     name: "",
     info: "",
+    githubUrl: "",
+    twitterUrl: "",
   },
   mounted:function(){
     //画面内のクリック判定
@@ -27,7 +29,9 @@ M1
 しゃっちょさん
 POとして企画やユーザーに実際に意見をもらってきています
 開発もできる企画家になりたい！
-`;
+`
+this.githubUrl = ""
+this.twitterUrl = "";
           break
         case "kugi":
           this.imgSrc = "figs/members/kugi.jpg";
@@ -35,7 +39,9 @@ POとして企画やユーザーに実際に意見をもらってきています
 M2
 「スクラムマスター」のような立ち位置、プログラマー
 CG、ゲーム開発に興味があります
-`;
+`
+this.githubUrl = "https://github.com/kugimasa"
+this.twitterUrl = "https://twitter.com/kugi_masa";
           break;
         case "yamakatsu":
           this.imgSrc = "figs/members/yamakatsu.jpg";
@@ -43,11 +49,20 @@ CG、ゲーム開発に興味があります
 M1
 プログラマー
 フロントエンドを中心に、フルスタック目指してます
-`;
+`
+this.githubUrl = "https://github.com/Yamakatsu63"
+this.twitterUrl = "https://twitter.com/yamakatsu1217";
           break;
         case "inami":
-          this.imgSrc = "figs/members/default.png";
-          this.info = "";
+          this.imgSrc = "figs/members/inami.jpg";
+          this.info = `
+M1
+見習い
+電気系
+電力について研究しています
+`
+this.githubUrl = ""
+this.twitterUrl = "";
           break;
         default:
           this.imgSrc = "figs/members/default.png";
@@ -67,18 +82,28 @@ M1
 夢は、UIデザイナー
 好きな食べ物はお刺身
 心霊など、オカルト、好きです
-`;
+`
+this.githubUrl = "https://github.com/daigo0907?tab=repositories"
+this.twitterUrl = "https://twitter.com/DaigoDesign02";
           break;
         case "Takeda":
-          this.imgSrc = "figs/members/default.png";
-          this.info = "";
+          this.imgSrc = "figs/members/takeda.jpg";
+          this.info = `
+M1
+プログラマー
+面白いプラットフォームを作りたい
+`
+this.githubUrl = ""
+this.twitterUrl = "";
           break;
         case "Nishida":
           this.imgSrc = "figs/members/nishida.jpg";
           this.info = `
 B4
 したっぱ社員
-`;
+`
+this.githubUrl = ""
+this.twitterUrl = "";
           break;
         default:
           this.imgSrc = "figs/members/default.png"
