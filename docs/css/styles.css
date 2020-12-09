@@ -149,11 +149,10 @@ body{
 .media-body{
   color: #FAFAFA;
 }
-.media-body a{
-  color: #201005;
-}
-.sns-icon-container{
-  margin-top: 10px;
+.sns-icon{
+  color: #FAFAFA;
+  width: 48px;
+  margin-left: 8px;
 }
 .members-list, .works-list, .events-list{
 	display: flex;

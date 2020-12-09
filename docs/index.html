@@ -73,12 +73,10 @@
         <div class="container media">
           <img v-bind:src="imgSrc" class="memberPanel align-self-center">
           <div class="memberPanel media-body">
-            <h1 class="memberPanel" id="name">{{ name }}</h1>
+            <h1 class="memberPanel" id="name">{{ name }}
+              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="sns-icon"></a>
+              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="sns-icon"></a></h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
-            <div class="sns-icon-container">
-              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="contact-icon"></a>
-              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="contact-icon"></a>
-            </div>
           </div>
         </div>
       </div>
@@ -106,12 +104,10 @@
         <div class="memberPanel container media">
           <img v-bind:src="imgSrc" class="memberPanel align-self-center">
           <div class="memberPanel media-body">
-            <h1 class="memberPanel" id="name">{{ name }}</h1>
+            <h1 class="memberPanel" id="name">{{ name }}
+              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="sns-icon"></a>
+              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="sns-icon"></a></h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
-            <div class="sns-icon-container">
-              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="contact-icon"></a>
-              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="contact-icon"></a>
-            </div>
           </div>
         </div>
       </div>
