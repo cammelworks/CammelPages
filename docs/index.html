@@ -59,6 +59,9 @@
       <div>
         <p>
           Cammelは広島大学の学生7人のアジャイル開発チームです。<br>
+          <br>
+          名前の由来は、ラクダがコブに栄養を貯めるように知識と経験を貯めて、砂漠のような厳しい状況でもアジャイルでこなしていきたいという思いからです！<br>
+          <br>
           チーム開発の能力を向上させつつ常に新しいことに目を向けながら挑戦をしていきたいと思っています！<br>
           企画・実装・テスト・レビュー・フィードバックなど1からプロダクト開発を行っており、現在は案件も募集中です！
         </p>
@@ -73,12 +76,10 @@
         <div class="container media">
           <img v-bind:src="imgSrc" class="memberPanel align-self-center">
           <div class="memberPanel media-body">
-            <h1 class="memberPanel" id="name">{{ name }}</h1>
+            <h1 class="memberPanel" id="name">{{ name }}
+              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="sns-icon"></a>
+              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="sns-icon"></a></h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
-            <div class="sns-icon-container">
-              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="contact-icon"></a>
-              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="contact-icon"></a>
-            </div>
           </div>
         </div>
       </div>
@@ -106,12 +107,10 @@
         <div class="memberPanel container media">
           <img v-bind:src="imgSrc" class="memberPanel align-self-center">
           <div class="memberPanel media-body">
-            <h1 class="memberPanel" id="name">{{ name }}</h1>
+            <h1 class="memberPanel" id="name">{{ name }}
+              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="sns-icon"></a>
+              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="sns-icon"></a></h1>
             <div class="memberPanel" id="memberInfo">{{ info }}</div>
-            <div class="sns-icon-container">
-              <a v-bind:href="githubUrl"><img v-if="githubUrl" src="figs/links/github.png" class="contact-icon"></a>
-              <a v-bind:href="twitterUrl"><img v-if="twitterUrl" src="figs/links/twitter.png" class="contact-icon"></a>
-            </div>
           </div>
         </div>
       </div>
