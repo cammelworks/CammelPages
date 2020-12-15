@@ -9,7 +9,8 @@ var works = new Vue({
     appStoreUrl: "",
     googlePlayUrl: "",
     webUrl: "",
-    mobileApp: false,
+    appStoreApp: false,
+    googlePlayApp: false,
     webApp: false,
   },
   mounted: function () {
@@ -34,8 +35,9 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
 `
           this.appStoreUrl = ""
           this.googlePlayUrl = ""
-          this.webUrl = "https://codetyper-cc5b6.web.app/index.html"
-          this.mobileApp = false;
+          this.webUrl = "https://codetyper-cc5b6.web.app/index.html";
+          this.appStoreApp = false,
+          this.googlePlayApp = false,
           this.webApp = true;
           break
         case "DoubleEdged":
@@ -48,7 +50,8 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
           this.appStoreUrl = ""
           this.googlePlayUrl = ""
           this.webUrl = ""
-          this.mobileApp = true;
+          this.appStoreApp = true,
+          this.googlePlayApp = true,
           this.webApp = false;
           break;
         case "MikkaBozu":
@@ -61,7 +64,8 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
           this.appStoreUrl = "https://apps.apple.com/us/app/%E4%B8%89%E6%97%A5%E5%9D%8A%E4%B8%BB%E3%81%AE%E5%9B%9B%E6%97%A5%E7%9B%AE/id1524952040?itsct=apps_box&itscg=30200"
           this.googlePlayUrl = "https://play.google.com/store/apps/details?id=com.cammel.the4thdayofmikkabozu"
           this.webUrl = ""
-          this.mobileApp = true;
+          this.appStoreApp = true,
+          this.googlePlayApp = true,
           this.webApp = false;
           break;
         default:
@@ -85,7 +89,8 @@ ARで広々と楽器を演奏しましょう！
           this.appStoreUrl = ""
           this.googlePlayUrl = "https://play.google.com/store/apps/details?id=com.Cammel.ARBeats"
           this.webUrl = ""
-          this.mobileApp = true;
+          this.appStoreApp = false,
+          this.googlePlayApp = true,
           this.webApp = false;
           break;
         case "ByeByeVirus":
@@ -98,7 +103,8 @@ ARで広々と楽器を演奏しましょう！
           this.appStoreUrl = ""
           this.googlePlayUrl = ""
           this.webUrl = "https://byebyevirus-bfa26.firebaseapp.com/"
-          this.mobileApp = false;
+          this.appStoreApp = false,
+          this.googlePlayApp = false,
           this.webApp = true;
           break;
         case "NameIt":
@@ -111,7 +117,8 @@ ARで広々と楽器を演奏しましょう！
           this.appStoreUrl = ""
           this.googlePlayUrl = ""
           this.webUrl = "https://name-it-38fb8.web.app/#/"
-          this.mobileApp = false;
+          this.appStoreApp = false,
+          this.googlePlayApp = false,
           this.webApp = true;
           break;
         default:
