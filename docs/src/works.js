@@ -47,8 +47,8 @@ CodeTyperではそのようなキーも実際にプログラムを写経をし�
 さくっと終わるリバーシ！オンラインプレイ！
 宝石を取ってかわいいキャラたちの間で行われる戦いに勝とう！
 `
-          this.appStoreUrl = ""
-          this.googlePlayUrl = ""
+          this.appStoreUrl = "https://apps.apple.com/jp/app/doubleedged/id1493190384?itsct=apps_box&itscg=30200"
+          this.googlePlayUrl = "https://play.google.com/store/apps/details?id=com.Cammel.DoubleEdged"
           this.webUrl = ""
           this.appStoreApp = true,
           this.googlePlayApp = true,
